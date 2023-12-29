@@ -33,22 +33,48 @@ class _MainScreenState extends State<MainScreen> {
       home: Scaffold(
         body: _pages.elementAt(_currentIndex),
         bottomNavigationBar: BottomNavigationBar(
+          /// selectedItemColor: Colors.orange,
+          fixedColor: Colors.orange,
+          selectedIconTheme: IconThemeData(color: Colors.orange),
+          unselectedItemColor: Colors.black,
+          unselectedLabelStyle: TextStyle(color: Colors.black),
+          showUnselectedLabels: true,
           items: [
             BottomNavigationBarItem(
                 icon: Image.asset('lib/assets/icons/home.png'),
-                label: "Домашняя"),
+                label: "Домашняя",
+                activeIcon: Image.asset(
+                  'lib/assets/icons/home.png',
+                  color: Colors.orange,
+                )),
             BottomNavigationBarItem(
                 icon: Image.asset('lib/assets/icons/search.png'),
-                label: "Поиск"),
+                label: "Поиск",
+                activeIcon: Image.asset(
+                  'lib/assets/icons/search.png',
+                  color: Colors.orange,
+                )),
             BottomNavigationBarItem(
                 icon: Image.asset('lib/assets/icons/orders.png'),
-                label: "Заказы"),
+                label: "Заказы",
+                activeIcon: Image.asset(
+                  'lib/assets/icons/orders.png',
+                  color: Colors.orange,
+                )),
             BottomNavigationBarItem(
                 icon: Image.asset('lib/assets/icons/fav.png'),
-                label: "Избранное"),
+                label: "Избранное",
+                activeIcon: Image.asset(
+                  'lib/assets/icons/fav.png',
+                  color: Colors.orange,
+                )),
             BottomNavigationBarItem(
                 icon: Image.asset('lib/assets/icons/profile.png'),
-                label: "Профиль"),
+                label: "Профиль",
+                activeIcon: Image.asset(
+                  'lib/assets/icons/profile.png',
+                  color: Colors.orange,
+                )),
           ],
           currentIndex: _currentIndex,
           onTap: _onItemTapped,

@@ -1,26 +1,18 @@
 import 'package:flutter/material.dart';
 
-class SecondBlock extends StatelessWidget {
-  const SecondBlock({super.key});
+class SliderBlock extends StatelessWidget {
+  final String text;
+  final String path;
+  const SliderBlock({required this.text, required this.path});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 380,
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            spreadRadius: 3,
-            blurRadius: 1,
-            offset: Offset(0, 2), // changes position of shadow
-          ),
-        ],
-      ),
       child: Stack(
         children: [
           Image.asset(
-            'lib/assets/images/durso.jpg',
+            path,
             height: 380,
             fit: BoxFit.fitHeight,
           ),
@@ -31,7 +23,7 @@ class SecondBlock extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Почувствуй',
+                      'Путешествие',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 24,
@@ -39,7 +31,7 @@ class SecondBlock extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '"Абрау-Дюрсо"',
+                      'в "Абрау-Дюрсо"',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 24,
@@ -50,7 +42,7 @@ class SecondBlock extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                        'Экскурсия по Русскому винному дому c \nдегустацией игристых вин и крепких \nнапитков',
+                        '${text}',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 14,

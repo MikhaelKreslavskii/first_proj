@@ -1,6 +1,4 @@
-import 'package:first_proj/components/first_page_slider/first_block.dart';
-import 'package:first_proj/components/first_page_slider/second_block.dart';
-import 'package:first_proj/components/first_page_slider/third_block.dart';
+import 'package:first_proj/components/first_page_slider/slider_block.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -13,7 +11,10 @@ class StartPageController extends StatefulWidget {
 
 class _StartPageControllerState extends State<StartPageController> {
   final _controller = PageController();
-  final List blocks = [FirstBlock(), SecondBlock(), ThirdBlock()];
+  final List blocks = [
+   SliderBlock(text: 'Экскурсия по Русскому винному дому c \nдегустацией игристых вин и крепких \nнапитков',path: 'lib/assets/images/slider1.png',),
+   SliderBlock(text: "Экскурсия по Русскому винному дому c \nдегустацией игристых вин и крепких \nнапитков", path: 'lib/assets/images/durso.jpg' ),
+   SliderBlock(text:"Экскурсия по Русскому винному дому c \nдегустацией игристых вин и крепких \nнапитков" , path: 'lib/assets/images/abrau.jpg' )];
   @override
   Widget build(BuildContext context) {
     return Container(

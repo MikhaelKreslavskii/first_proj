@@ -1,4 +1,9 @@
+import 'package:first_proj/bloc/page_bloc.dart';
+import 'package:first_proj/components/adventure_page/adventure_page.dart';
+import 'package:first_proj/components/chosen_part/chosen_part_list.dart';
+import 'package:first_proj/components/event_page/event_page.dart';
 import 'package:first_proj/components/first_page_slider/start_page_controller.dart';
+import 'package:first_proj/components/second_slider/card_list.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -9,10 +14,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final pageBloc = PageBloc();
   @override
   Widget build(BuildContext context) {
     const primaryColor = Color.fromARGB(255, 249, 209, 88);
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 247, 245, 240),
       appBar: AppBar(
         backgroundColor: primaryColor,
         title: Row(children: <Widget>[
@@ -48,6 +55,17 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(children: [
           StartPageController(),
+          CardList(
+            pageBloc: pageBloc,
+          ),
+          ChosenPartList(
+            pageBloc: pageBloc,
+          ),
+          EventPage(),
+          SizedBox(
+            height: 28,
+          ),
+          AdventurePage(),
         ]),
       ),
     );
