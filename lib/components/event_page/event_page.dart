@@ -13,7 +13,7 @@ class EventPage extends StatelessWidget {
         children: [
           Text(
             "Вино – События рядом с вами",
-            style: TextStyle(fontSize: 19),
+            style: TextStyle(fontSize: 19, fontFamily: 'Averta'),
           ),
           Row(
             ///  mainAxisAlignment: MainAxisAlignment.spaceEvenly,

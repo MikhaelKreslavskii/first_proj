@@ -12,7 +12,7 @@ class AdventurePage extends StatelessWidget {
         children: [
           Text(
             "Потрясающие приключения по\nвсей России",
-            style: TextStyle(fontSize: 19),
+            style: TextStyle(fontSize: 19, fontFamily: 'Averta'),
           ),
           Container(
             height: 180,
@@ -33,7 +33,8 @@ class AdventurePage extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Averta'),
                     ),
                   ),
                 ),

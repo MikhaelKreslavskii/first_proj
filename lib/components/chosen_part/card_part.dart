@@ -27,14 +27,17 @@ class CardPart extends StatelessWidget {
             padding: const EdgeInsets.all(12.0),
             child: Text(
               "Дебютанты на подиуме \nСырного Сомелье",
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Averta'),
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 12.0),
             child: Text(
               "Группа до 10 чел. 8 часов",
-              style: TextStyle(fontSize: 11),
+              style: TextStyle(fontSize: 11, fontFamily: 'Averta'),
             ),
           ),
           SizedBox(
@@ -48,7 +51,11 @@ class CardPart extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Color.fromARGB(255, 247, 245, 240),
                   borderRadius: BorderRadius.circular(12)),
-              child: Center(child: Text("Новинка")),
+              child: Center(
+                  child: Text(
+                "Новинка",
+                style: TextStyle(fontFamily: 'Averta'),
+              )),
             ),
           ),
           SizedBox(
@@ -83,9 +90,15 @@ class CardPart extends StatelessWidget {
               children: [
                 Text(
                   "5500 руб",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                      fontFamily: 'Averta'),
                 ),
-                Text(" с человека")
+                Text(
+                  " с человека",
+                  style: TextStyle(fontFamily: 'Averta'),
+                )
               ],
             ),
           )

@@ -25,7 +25,9 @@ class CardEvent extends StatelessWidget {
                 child: Text(
               "3 мероприятия",
               style: TextStyle(
-                  color: Color.fromARGB(255, 118, 91, 10), fontSize: 12),
+                  color: Color.fromARGB(255, 118, 91, 10),
+                  fontSize: 12,
+                  fontFamily: 'Averta'),
             )),
           ),
           SizedBox(
@@ -43,7 +45,8 @@ class CardEvent extends StatelessWidget {
               style: TextStyle(
                   fontSize: 12,
                   color: Colors.white,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Averta'),
             )),
           ),
         ]),

@@ -27,7 +27,7 @@ class _ChosenPartListState extends State<ChosenPartList> {
           padding: const EdgeInsets.only(left: 20.0),
           child: Text(
             "Гастрономическое приключение - \nВино",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 18, fontFamily: 'Averta'),
           ),
         ),
         Container(
