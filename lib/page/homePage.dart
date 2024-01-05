@@ -26,8 +26,8 @@ class _HomePageState extends State<HomePage> {
           title: Row(children: <Widget>[
             Container(
               /// height: 34,
-              constraints: BoxConstraints.loose(Size(296, 34)),
-              width: 280,
+              constraints: BoxConstraints.loose(Size(312, 34)),
+              width: 312,
               child: TextField(
                 ///cursorHeight: 4,
                 ///  textAlignVertical: TextAlignVertical.center,

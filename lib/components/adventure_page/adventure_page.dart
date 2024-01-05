@@ -42,12 +42,17 @@ class AdventurePage extends StatelessWidget {
                   width: 8,
                 ),
                 Container(
-                  height: 140,
+                  height: 180,
                   width: 220,
                   decoration: BoxDecoration(
+                      color: Colors.red,
                       borderRadius: BorderRadius.circular(4),
                       image: DecorationImage(
-                          image: ExactAssetImage('lib/assets/images/spb.png'))),
+                          scale: 0.3,
+                          fit: BoxFit.cover,
+                          image: AssetImage(
+                            'lib/assets/images/spb.jpg',
+                          ))),
                   child: Center(
                     child: Text(
                       "САНКТ-ПЕТЕРБУРГ",
@@ -58,6 +63,9 @@ class AdventurePage extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(
+                  width: 8,
+                )
               ],
             ),
           )

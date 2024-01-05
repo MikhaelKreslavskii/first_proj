@@ -9,9 +9,11 @@ class CardEvent extends StatelessWidget {
     return Container(
       height: 180,
       width: 152,
+      constraints: BoxConstraints.expand(width: 180, height: 180),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(4),
-          image: DecorationImage(image: ExactAssetImage(image_path))),
+          image: DecorationImage(
+              image: ExactAssetImage(image_path), fit: BoxFit.fill)),
       child: Padding(
         padding: const EdgeInsets.only(left: 8, top: 8, bottom: 8),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
